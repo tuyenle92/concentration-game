@@ -106,6 +106,7 @@ export const DrawerAppBar = ({ showScore = true }) => {
             </MenuItem>
             <MenuItem aria-disabled >
                 <TextField
+                    aria-disabled
                     onKeyDown={handleEnteredTheme}
                     onChange={e => {
                         setEnteredTheme(e.target.value);
