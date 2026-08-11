@@ -1,0 +1,15 @@
+.container {
+    align-content: center;
+    align-items: flex-start;
+    background-color: transparent;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    row-gap: 0;
+    height: fit-content;
+}
+
+.score {
+    flex-basis: 100%;
+}

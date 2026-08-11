@@ -1,0 +1,53 @@
+.back {
+    border-radius: 8px;
+    height: 250px;
+    object-fit: fill;
+    width: 250px;
+}
+
+.container {
+    background-color: transparent;
+    cursor: pointer;
+    perspective: 1200px;
+    display: inline-block;
+
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+.face {
+    border-radius: 8px;
+    backface-visibility: hidden;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    height: 250px;
+    inset: 0;
+    object-fit: cover;
+    position: absolute;
+    transform: rotateY(180deg);
+    width: 250px;
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
+
+.inner {
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    backface-visibility: hidden;
+    background-color: transparent;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    height: 250px;
+    inset: 0;
+    padding: 0;
+    position: relative;
+    transition:
+            transform 1s ease,
+            box-shadow 0.7s ease;
+    transform-style: preserve-3d;
+    width: 250px;
+}
