@@ -12,3 +12,8 @@ https://github.com/user-attachments/assets/eb764f6e-eaeb-423c-9a1d-c172872fda1c
 
 
 
+## Upcoming
+
+- Multiple players
+- Leader scoreboard so player can see their scores relative to other
+- Signup/login to save progress
