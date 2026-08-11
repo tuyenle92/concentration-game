@@ -1,16 +1,14 @@
-# React + Vite
+# Concentration game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+[Concentration](https://en.wikipedia.org/wiki/Concentration_(card_game)) is a classic matching card game where players turn over two cards at a time to find and collect identical pairs.
+What makes this interesting is different image themes are used throughout the game. You can choose or search for any theme that suit your interest or play with random images. Special thanks to [Unsplash](https://unsplash.com/documentation#list-topics) API for making this possible. All images are Unplash proprietary
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+https://github.com/user-attachments/assets/eb764f6e-eaeb-423c-9a1d-c172872fda1c
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
