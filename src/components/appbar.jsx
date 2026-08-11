@@ -104,7 +104,7 @@ export const DrawerAppBar = ({ showScore = true }) => {
                     Current: {theme ?? 'none'}
                 </Typography>
             </MenuItem>
-            <MenuItem>
+            <MenuItem aria-disabled >
                 <TextField
                     onKeyDown={handleEnteredTheme}
                     onChange={e => {
