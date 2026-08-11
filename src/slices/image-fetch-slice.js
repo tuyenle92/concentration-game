@@ -23,7 +23,7 @@ const randomImagesSlice = createSlice({
             .addCase(fetchRandomImages.fulfilled, (state, action) => {
                 let urls = action.payload.flatMap(image => {
                     return {
-                        url: image.urls.small,
+                        url: image.urls.regular,
                         id: image.id,
                         author: image.user.name,
                         portfolio_url: image.user['portfolio_url'],
