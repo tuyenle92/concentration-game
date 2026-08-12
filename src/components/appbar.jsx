@@ -118,11 +118,14 @@ export const DrawerAppBar = ({ showScore = true }) => {
                     </List>
                 </Collapse>
 
-    const aboutButton = <Button onClick={() => navigate('/about')} key={navItems[2]} style={{ color: indigo[50] }}>
-        About
-    </Button>
-
-    const menuButtons = [homeButton, themeButton, aboutButton];
+                <ListItemButton onClick={() => navigate('/about')}>
+                    <ListItemText>
+                        About
+                    </ListItemText>
+                </ListItemButton>
+            </List>
+        </Box>
+    )
 
     return (
         <Box sx={{ display: 'flex' }}>
