@@ -129,8 +129,8 @@ export const DrawerAppBar = ({ showScore = true }) => {
 
     return (
         <Box sx={{ display: 'flex' }}>
-            <CssBaseline />
-            <AppBar component='nav' sx={{ backgroundColor: indigo[500] }}>
+            <CssBaseline/>
+            <AppBar position='fixed' component='nav' sx={{ backgroundColor: indigo[500] }}>
                 <Toolbar>
                     <Typography
                         variant='h6'
