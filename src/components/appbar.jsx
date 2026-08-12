@@ -3,6 +3,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { changeTheme } from '../slices/game-slice.js';
 import { useNavigate } from "react-router-dom";
 import { indigo } from '@mui/material/colors';
+import MenuIcon from '@mui/icons-material/Menu';
+import ExpandLess from '@mui/icons-material/ExpandLess';
+import ExpandMore from '@mui/icons-material/ExpandMore';
 import {
     AppBar,
     Box,
