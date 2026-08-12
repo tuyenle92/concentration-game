@@ -58,9 +58,36 @@ export const DrawerAppBar = ({ showScore = true }) => {
         return () => clearInterval(interval);
     }, [randomImages]);
 
-    const homeButton = <Button onClick={() => navigate('/')} key={navItems[0]} style={{ color: indigo[50] }}>
-        Home
-    </Button>
+    const DrawerList = (
+        <Box sx={{ width: 180, height: '100%', backgroundColor: indigo[50] }} role="presentation">
+            <List>
+                <ListItemButton onClick={() => navigate('/')}>
+                    <ListItemText>
+                        Home
+                    </ListItemText>
+                </ListItemButton>
+
+                <ListItemButton onClick={() => setCollapsed(!collapsed)}>
+                    <ListItemText>
+                        Theme: {theme}
+                    </ListItemText>
+                    {collapsed ? <ExpandMore/> : <ExpandLess/>}
+                </ListItemButton>
+
+                <Collapse in={collapsed} unmountOnExit timeout='auto'>
+                    <List component='div' disablePadding>
+                        <ListItemButton onClick={handleMenuThemeClick('Japan')} sx={{ pl: 4 }}>
+                            <ListItemText>
+                                Japan
+                            </ListItemText>
+                        </ListItemButton>
+
+
+                        <ListItemButton onClick={handleMenuThemeClick('Nature')} sx={{ pl: 4 }}>
+                            <ListItemText>
+                                Nature
+                            </ListItemText>
+                        </ListItemButton>
 
     const themeButton = <div>
         <Button
