@@ -166,9 +166,20 @@ export const DrawerAppBar = ({ showScore = true }) => {
                             : null
                     }
 
-                    <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
-                        { menuButtons }
-                    </Box>
+                    <IconButton
+                        size="large"
+                        edge="start"
+                        color="inherit"
+                        aria-label="menu"
+                        sx={{ mr: 2 }}
+                        onClick={() => setDrawerOpen(!drawerOpen)}
+                    >
+                        <MenuIcon/>
+                    </IconButton>
+
+                    <Drawer anchor='right' open={drawerOpen} onClose={() => setDrawerOpen(false)}>
+                        {DrawerList}
+                    </Drawer>
                 </Toolbar>
             </AppBar>
         </Box>
