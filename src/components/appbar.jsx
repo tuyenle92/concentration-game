@@ -27,7 +27,6 @@ import {
 export const DrawerAppBar = ({ showScore = true }) => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const navItems = ['Home', 'Theme', 'About'];
 
     const [drawerOpen, setDrawerOpen] = useState(false);
     const [collapsed, setCollapsed] = useState(false);
