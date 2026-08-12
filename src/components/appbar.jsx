@@ -144,7 +144,7 @@ export const DrawerAppBar = ({ showScore = true }) => {
 
                     {
                         error === null && showScore
-                        ? <Box sx={{ flexGrow: 1, display: 'block' }}>
+                            ? <Box sx={{ flexGrow: 1, display: 'block' }}>
                                 <Typography
                                     variant='subtitle1'
                                     component='div'
