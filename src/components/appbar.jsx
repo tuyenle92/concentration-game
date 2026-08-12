@@ -137,7 +137,9 @@ export const DrawerAppBar = ({ showScore = true }) => {
                         component='div'
                         sx={{ color: indigo[50], flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
-                        Concentration (card game) power by  <Link variant='button' style={{ color: indigo[50] }} target='_blank' underline='hover' href="https://unsplash.com/">Unsplash</Link>
+                        Matching Pairs power by <Link variant='button' style={{ color: indigo[50] }}
+                                                      target='_blank' underline='hover'
+                                                      href="https://unsplash.com/">Unsplash</Link>
                     </Typography>
 
                     {
