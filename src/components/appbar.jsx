@@ -31,11 +31,6 @@ export const DrawerAppBar = ({ showScore = true }) => {
     const [drawerOpen, setDrawerOpen] = useState(false);
     const [collapsed, setCollapsed] = useState(false);
     const [enteredTheme, setEnteredTheme] = useState(false);
-    const open = Boolean(anchorEl);
-
-    const id = useId();
-    const buttonId = `${id}-button`;
-    const menuId = `${id}-menu`;
 
     const { moveCount, theme } = useSelector((state) => state.game);
     const { loading, error, randomImages } = useSelector((state) => state.randomImages);
