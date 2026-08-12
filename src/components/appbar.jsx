@@ -89,103 +89,34 @@ export const DrawerAppBar = ({ showScore = true }) => {
                             </ListItemText>
                         </ListItemButton>
 
-    const themeButton = <div>
-        <Button
-            id={buttonId}
-            key={navItems[1]}
-            onClick={handleClick}
-            style={{ color: indigo[50] }}
-        >
-            Theme
-        </Button>
-        <Menu
-            anchorEl={anchorEl}
-            anchor
-            disableAutoFocusItem={true}
-            autoFocus={false}
-            disableEnforceFocus={true}
-            disableAutoFocus={true}
-            id={menuId}
-            open={open}
-            onClose={handleClose}
-            slotProps={{
-                list: {
-                    'aria-labelledby': buttonId,
-                },
-            }}
-        >
-            <MenuItem
-                aria-disabled
-                sx={{
-                    '&:hover': {
-                        backgroundColor: 'transparent',
-                    }
-                }}
-            >
-                <Typography sx={{ color: indigo[500] }}>
-                    Current: {theme ?? 'none'}
-                </Typography>
-            </MenuItem>
-            <MenuItem aria-disabled >
-                <TextField
-                    aria-disabled
-                    onKeyDown={handleEnteredTheme}
-                    onChange={e => {
-                        setEnteredTheme(e.target.value);
-                    }}
-                    id='enter-theme'
-                    label='Theme'
-                    helperText='Enter your theme'
-                    size='small'
-                    variant='standard'
-                />
-            </MenuItem>
-            <Divider sx={{ color: indigo[50] }} />
-            <MenuItem
-                aria-disabled
-                onClick={handleMenuThemeClick('Vietnam')}
-            >
-                Vietnam
-            </MenuItem>
-            <MenuItem
-                aria-disabled
-                onClick={handleMenuThemeClick('Japan')}
-            >
-                Japan
-            </MenuItem>
-            <MenuItem
-                aria-disabled
-                onClick={handleMenuThemeClick('USA')}
-            >
-                USA
-            </MenuItem>
-            <MenuItem
-                aria-disabled
-                onClick={handleMenuThemeClick('Cat')}
-            >
-                Cat
-            </MenuItem>
-            <MenuItem
-                aria-disabled
-                onClick={handleMenuThemeClick('Dog')}
-            >
-                Dog
-            </MenuItem>
-            <MenuItem
-                aria-disabled
-                onClick={handleMenuThemeClick('Spiderman')}
-            >
-                Spiderman
-            </MenuItem>
-            <Divider sx={{ color: indigo[50] }} />
-            <MenuItem
-                aria-disabled
-                onClick={handleMenuThemeClick(null)}
-            >
-                Random
-            </MenuItem>
-        </Menu>
-    </div>
+                        <ListItemButton onClick={handleMenuThemeClick('Spiderman')} sx={{ pl: 4 }}>
+                            <ListItemText>
+                                Spiderman
+                            </ListItemText>
+                        </ListItemButton>
+
+                        <ListItemButton onClick={handleMenuThemeClick('Car')} sx={{ pl: 4 }}>
+                            <ListItemText>
+                                Car
+                            </ListItemText>
+                        </ListItemButton>
+
+                        <ListItem disablePadding disableGutters sx={{ pl: 4 }}>
+                            <TextField
+                                aria-disabled
+                                onKeyDown={handleEnteredTheme}
+                                onChange={e => {
+                                    setEnteredTheme(e.target.value);
+                                }}
+                                id='enter-theme'
+                                label='Theme'
+                                helperText='Enter your theme'
+                                size='medium'
+                                variant='standard'
+                            />
+                        </ListItem>
+                    </List>
+                </Collapse>
 
     const aboutButton = <Button onClick={() => navigate('/about')} key={navItems[2]} style={{ color: indigo[50] }}>
         About
