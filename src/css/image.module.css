@@ -1,8 +1,8 @@
 .back {
     border-radius: 8px;
-    height: 250px;
-    object-fit: fill;
-    width: 250px;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
 }
 
 .container {
@@ -10,7 +10,8 @@
     cursor: pointer;
     perspective: 1200px;
     display: inline-block;
-
+    height: 250px;
+    width: 250px;
 }
 
 .container:hover {
@@ -23,12 +24,12 @@
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.15);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
-    height: 250px;
+    height: 100%;
     inset: 0;
     object-fit: cover;
     position: absolute;
     transform: rotateY(180deg);
-    width: 250px;
+    width: 100%;
 }
 
 .flipped {
@@ -41,13 +42,28 @@
     backface-visibility: hidden;
     background-color: transparent;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
-    height: 250px;
+    height: 100%;
     inset: 0;
+    object-fit: cover;
     padding: 0;
     position: relative;
     transition:
             transform 1s ease,
             box-shadow 0.7s ease;
     transform-style: preserve-3d;
-    width: 250px;
+    width: 100%;
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    .container {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 0) and (max-width: 500px) {
+    .container {
+        width: 80px;
+        height: 80px;
+    }
 }
