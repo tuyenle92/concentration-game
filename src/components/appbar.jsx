@@ -163,7 +163,7 @@ export const DrawerAppBar = ({ showScore = true }) => {
                                 </Typography>
 
                             </Box>
-                        : null
+                            : null
                     }
 
                     <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
