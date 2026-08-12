@@ -19,6 +19,7 @@ const randomImagesSlice = createSlice({
             .addCase(fetchRandomImages.pending, (state) => {
                 state.ranomImages = null;
                 state.loading = true;
+                state.error = null;
             })
             .addCase(fetchRandomImages.fulfilled, (state, action) => {
                 let urls = action.payload.flatMap(image => {
@@ -40,6 +41,7 @@ const randomImagesSlice = createSlice({
 
                 state.loading = false;
                 state.randomImages = urls;
+                state.error = null
             })
             .addCase(fetchRandomImages.rejected, (state, action) => {
                 state.loading = false;
