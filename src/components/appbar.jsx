@@ -150,7 +150,8 @@ export const DrawerAppBar = ({ showScore = true }) => {
                                     component='div'
                                     style={{ color: indigo[50] }}
                                 >
-                                    { loading && randomImages === null ? <Skeleton /> : 'Number of mismatch: ' + moveCount }
+                                    {loading && randomImages === null ?
+                                        <Skeleton width={50}/> : 'Number of mismatch: ' + moveCount}
                                 </Typography>
                                 <Typography
                                     variant='subtitle1'
