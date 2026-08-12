@@ -40,14 +40,7 @@ export const DrawerAppBar = ({ showScore = true }) => {
         dispatch(changeTheme({ theme: newTheme }));
     }
 
-    const handleClick = event => {
-        setAnchorEl(event.currentTarget);
-    };
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
-
-    const handleEnteredTheme =  event => {
+    const handleEnteredTheme = event => {
         if (event.key === 'Enter') {
             dispatch(changeTheme({ theme: enteredTheme }));
         }
