@@ -159,7 +159,7 @@ export const DrawerAppBar = ({ showScore = true }) => {
                                     style={{ color: indigo[50] }}
                                 >
                                     {loading && randomImages === null ?
-                                        <Skeleton width={50}/> : 'Seconds elapsed: ' + seconds}
+                                        <Skeleton width={100}/> : 'Seconds elapsed: ' + seconds}
                                 </Typography>
 
                             </Box>
