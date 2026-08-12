@@ -36,7 +36,7 @@ export const DrawerAppBar = ({ showScore = true }) => {
     const { loading, error, randomImages } = useSelector((state) => state.randomImages);
     const [seconds, setSeconds] = useState(0);
 
-    const handleMenuThemeClick = newTheme =>  () => {
+    const handleMenuThemeClick = newTheme => () => {
         dispatch(changeTheme({ theme: newTheme }));
     }
 
