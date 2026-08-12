@@ -29,7 +29,8 @@ export const DrawerAppBar = ({ showScore = true }) => {
     const dispatch = useDispatch();
     const navItems = ['Home', 'Theme', 'About'];
 
-    const [anchorEl, setAnchorEl] = useState(null);
+    const [drawerOpen, setDrawerOpen] = useState(false);
+    const [collapsed, setCollapsed] = useState(false);
     const [enteredTheme, setEnteredTheme] = useState(false);
     const open = Boolean(anchorEl);
 
