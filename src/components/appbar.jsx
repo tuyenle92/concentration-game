@@ -151,7 +151,7 @@ export const DrawerAppBar = ({ showScore = true }) => {
                                     style={{ color: indigo[50] }}
                                 >
                                     {loading && randomImages === null ?
-                                        <Skeleton width={50}/> : 'Number of mismatch: ' + moveCount}
+                                        <Skeleton width={100}/> : 'Number of mismatch: ' + moveCount}
                                 </Typography>
                                 <Typography
                                     variant='subtitle1'
