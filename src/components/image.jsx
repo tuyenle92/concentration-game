@@ -56,27 +56,21 @@ export const Image = ({ author, id, portfolio_url, url, username }) => {
                         variant='caption'
                         gutterBottom={false}
                     >
-                        Photo by {author} on {
-                            portfolio_url === null
-                                ? <Link
-                                    target='_blank'
-                                    variant='inherit'
-                                    color='textPrimary'
-                                    underline='none'
-                                    href={'https://unsplash.com/' + username}
-                                >
-                                    Unsplash
-                                </Link>
-                                : <Link
-                                    target='_blank'
-                                    variant='inheirt'
-                                    color='textPrimary'
-                                    underline='none'
-                                    href={portfolio_url}
-                                >
-                                    Unsplash
-                                </Link>
-                        }
+                        Photo by <Link
+                        target='_blank'
+                        variant='inherit'
+                        color='textPrimary'
+                        href={'https://unsplash.com/@' + username + '?utm_source=your_app_name&utm_medium=referral'}
+                    >
+                        {author}
+                    </Link> on <Link
+                        target='_blank'
+                        variant='inherit'
+                        color='textPrimary'
+                        href='https://unsplash.com/?utm_source=your_app_name&utm_medium=referral'
+                    >
+                        Unplash
+                    </Link>
                     </Typography>
                     : null
             }
